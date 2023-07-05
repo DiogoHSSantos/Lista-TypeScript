@@ -17,23 +17,79 @@ body{
     align-items: center;
     flex-direction: column;
     gap: 20px;
+    background: #252525;
 }
 
 .insertName{
     display: none;
 }
 
-#main{
-    height: 70vh;
 
+
+#header{
+    width: 100vw;
+    height: 10vh;
+
+    text-align: center;
+    background: #3c3c9996 ;
+    color: #e4e4e4;
+    padding: 10px;
+    
+}
+
+#main{
+    display: flex;
+    height: 70vh;
+}
+
+.areaDaLista{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#ItemLista{
+    background: transparent;
+    padding: 5px;
+    border-radius: 20px;
+    border: 2px solid #808080;
+    color: #e4e4e4;
+
+    outline: none;
+}
+
+.adicionaItem{
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+
+    cursor: pointer;
 }
 
 .areaResultado{
-    background: url(https://static.vecteezy.com/system/resources/previews/012/981/788/non_2x/old-parchment-paper-sheet-vintage-aged-or-texture-background-png.png);
-    height: 400px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    height: 100%;
     width: 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding: 30px;
-    text-align: center;
+    background: #202020;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: inset 5px 5px 10px #00000080;
+
+    cursor: context-menu;
+}
+
+.liDaLista{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    color: #e4e4e4;
+    font-weight: 500;
+}
+
+
+#footer{
+    height: 20vh;
 }

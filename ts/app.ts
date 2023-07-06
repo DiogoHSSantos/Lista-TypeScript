@@ -32,11 +32,16 @@ botaoCriaNomeLista.addEventListener('click', ()=>{
     setTimeout(()=>{
         areaInserirNome.style.display = 'none';
     }, 300)
+
+
 });
 
 botaoEditaNomeLista.addEventListener('click', ()=>{
+    
     setTimeout(()=>{
         areaInserirNome.style.display = 'flex';
+        inputNomeDaLista.focus()
     }, 300)
     areaInserirNome.style.opacity = '1';
+    
 });

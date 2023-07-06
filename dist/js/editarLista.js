@@ -19,7 +19,12 @@ export class NovoItemLista {
             botaoExcluir = _botaoExcluir[i];
             let liLista = _botaoExcluir[i].parentNode;
             _botaoExcluir[i].addEventListener('click', () => {
-                liLista.remove();
+                liLista.style.transition = '.4s';
+                liLista.style.opacity = '0';
+                liLista.style.transform = 'translateX(-120px)';
+                setTimeout(() => {
+                    liLista.remove();
+                }, 300);
             });
         }
     }

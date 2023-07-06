@@ -10,7 +10,7 @@
 <body>
     <div class="insertName">
         <p>Crie um nome para a sua lista!</p>
-        <input type="text" name="ListName" id="ListName" placeholder="Digite aqui o nome da Lista">
+        <input type="text" name="ListName" id="ListName" required placeholder="Digite aqui o nome da Lista" >
         <button class="criarNome">Criar nome</button>
 
     </div>
@@ -22,7 +22,7 @@
     <main id="main">
         <div class="areaDaLista">            
             <div class="areaDosInputs">
-                <input type="text" name="itemLista" id="ItemLista">
+                <input type="text" name="itemLista" id="ItemLista" required>
                 <button class="adicionaItem">Adicionar na lista</button>
             </div>
             <div class="areaResultado">
@@ -32,7 +32,15 @@
         </div>
     </main>
 
-    <footer id="footer"></footer>
+    <footer id="footer">
+        <div class="redesSociais">
+            <a href="https://www.instagram.com/diogoo_h._dev/" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.linkedin.com/in/diogo-henrique-22732221b/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="https://wa.me/+5511958784456" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+            <a href="https://github.com/DiogoHSSantos" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://diogohssantos.github.io/Portfolio-Diogo/" target="_blank"><i class='bx bx-user'></i></a>
+        </div>
+    </footer>
 
     <script type="module" src="./dist/js/app.js"></script>
 </body>

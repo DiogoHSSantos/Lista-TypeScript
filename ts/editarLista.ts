@@ -21,8 +21,6 @@ export class NovoItemLista{
         newLi.appendChild(trashIcon);
 
         UlList.appendChild(newLi);
-
-
     }
 
     removerItem(botaoExcluir:Event, ulLista:HTMLElement){
@@ -48,4 +46,5 @@ export class NovoItemLista{
         this._item.value = '';
         this._item.focus();
     }
+
 }

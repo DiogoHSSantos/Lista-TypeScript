@@ -7,7 +7,7 @@ const botaoAdiciona:HTMLElement = document.querySelector('.adicionaItem');
 
 botaoAdiciona.addEventListener('click', ()=>{
     novoItem.criarItem();
-    novoItem.LimpaInputFocus()
+    novoItem.LimpaInputFocus();
 });
 
 ulLista.addEventListener('mousedown', (botaoExcluir:Event) =>{
@@ -33,7 +33,7 @@ botaoCriaNomeLista.addEventListener('click', ()=>{
         areaInserirNome.style.display = 'none';
     }, 300)
 
-
+    
 });
 
 botaoEditaNomeLista.addEventListener('click', ()=>{

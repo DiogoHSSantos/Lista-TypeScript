@@ -18,7 +18,10 @@ export class NovoItemLista{
         trashIcon.classList.add('bxs-trash-alt');
 
         newLi.textContent = this._item.value
+
+
         newLi.appendChild(trashIcon);
+
 
         UlList.appendChild(newLi);
     }

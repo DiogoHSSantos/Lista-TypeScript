@@ -26,7 +26,7 @@ body{
 .insertName{
     backdrop-filter: blur(5px);
     position: absolute;
-    display: flex;
+    display: none;
     flex-direction: column;
     height:100%;
     width: 100vw;

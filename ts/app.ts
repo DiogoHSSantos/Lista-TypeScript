@@ -10,6 +10,8 @@ botaoAdiciona.addEventListener('click', ()=>{
     novoItem.LimpaInputFocus();
 });
 
+
+
 ulLista.addEventListener('mousedown', (botaoExcluir:Event) =>{
     novoItem.removerItem(botaoExcluir, ulLista)
 })
@@ -22,19 +24,21 @@ const botaoCriaNomeLista:HTMLButtonElement = document.querySelector('.criarNome'
 const nomeDaLista:HTMLElement = document.querySelector('.ListNameHeader');
 const botaoEditaNomeLista:HTMLButtonElement = document.querySelector('.bxs-pencil');
 
-
+if(localStorage.ListName == 'undefined'){
+    areaInserirNome.style.display = 'flex';
+}
 botaoCriaNomeLista.addEventListener('click', ()=>{
+    localStorage.ListName = inputNomeDaLista.value;
     nomeDaLista.textContent = inputNomeDaLista.value;
-    inputNomeDaLista.value = ''
 
     areaInserirNome.style.transition = '.3s';
     areaInserirNome.style.opacity = '0';
     setTimeout(()=>{
         areaInserirNome.style.display = 'none';
     }, 300)
-
-    
 });
+
+nomeDaLista.textContent = localStorage.ListName
 
 botaoEditaNomeLista.addEventListener('click', ()=>{
     
